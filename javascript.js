@@ -14,9 +14,8 @@ for (item of buttons) {
             res = "";
             screen.value = res;
         }
-        else if (buttonText == 'pow')
-        {
-            
+        else if (buttonText == 'pow') {
+
             res += "**";
             screen.value = res;
         }
@@ -40,7 +39,7 @@ for (item of buttons) {
             res = res.substr(0, res.length - 1);
             screen.value = res;
         }
-        else if ((buttonText == 'sin') || (buttonText == 'tan') || (buttonText == 'cos') || (buttonText == 'log') || (buttonText == '√') || (buttonText == 'Rad') || (buttonText == 'asin') || (buttonText == 'atan') || (buttonText == 'acos') || (buttonText == 'exp') || (buttonText == 'deg') ) {
+        else if ((buttonText == 'sin') || (buttonText == 'tan') || (buttonText == 'cos') || (buttonText == 'log') || (buttonText == '√') || (buttonText == 'Rad') || (buttonText == 'asin') || (buttonText == 'atan') || (buttonText == 'acos') || (buttonText == 'exp') || (buttonText == 'deg')) {
             let temp = res.substr(res.length - 1, res.length);
             if (((!isNaN(temp)) || temp == ')') && (res != "")) {
                 res = res + "*" + buttonText + '(';
@@ -128,7 +127,7 @@ function evaluation() {
         let exp = (pre + Math.asin(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -182,7 +181,7 @@ function evaluation() {
         let exp = (pre + Math.acos(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -236,7 +235,7 @@ function evaluation() {
         let exp = (pre + Math.atan(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -290,7 +289,7 @@ function evaluation() {
         let exp = (pre + Math.sin(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -337,7 +336,7 @@ function evaluation() {
         let exp = (pre + Math.cos(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -386,7 +385,7 @@ function evaluation() {
         let exp = (pre + Math.tan(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -435,7 +434,7 @@ function evaluation() {
         let exp = (pre + Math.log(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -484,7 +483,7 @@ function evaluation() {
         let exp = (pre + Math.exp(mid) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -543,7 +542,7 @@ function evaluation() {
 
 
         let exp = (pre + radres + post);
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -598,7 +597,7 @@ function evaluation() {
 
 
         let exp = (pre + degres + post);
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
@@ -647,7 +646,7 @@ function evaluation() {
         let exp = (pre + Math.sqrt(mid, 2) + post);
         console.log(exp);
         let flag = 0;
-        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos"))  || (exp.includes("deg"))  || (exp.includes("Rad"))  ||  (exp.includes("exp"))  || (exp.includes("log")) ) {
+        if ((exp.includes("tan(")) || (exp.includes("sin(")) || (exp.includes("cos")) || (exp.includes("√")) || (exp.includes("atan(")) || (exp.includes("asin(")) || (exp.includes("acos")) || (exp.includes("deg")) || (exp.includes("Rad")) || (exp.includes("exp")) || (exp.includes("log"))) {
             res = exp;
             flag = 1;
             evaluation();
