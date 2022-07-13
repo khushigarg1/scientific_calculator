@@ -14,6 +14,12 @@ for (item of buttons) {
             res = "";
             screen.value = res;
         }
+        else if (buttonText == 'pow')
+        {
+            
+            res += "**";
+            screen.value = res;
+        }
         else if (((lastletter == ')') || (!isNaN(lastletter))) && (buttonText == '(') && res.length >= 1) {
             res = res + "*" + buttonText;
             screen.value = res;
@@ -34,7 +40,7 @@ for (item of buttons) {
             res = res.substr(0, res.length - 1);
             screen.value = res;
         }
-        else if ((buttonText == 'sin') || (buttonText == 'tan') || (buttonText == 'cos') || (buttonText == 'log') || (buttonText == '√') || (buttonText == 'Rad') || (buttonText == 'asin') || (buttonText == 'atan') || (buttonText == 'acos') || (buttonText == 'exp') || (buttonText == 'deg')) {
+        else if ((buttonText == 'sin') || (buttonText == 'tan') || (buttonText == 'cos') || (buttonText == 'log') || (buttonText == '√') || (buttonText == 'Rad') || (buttonText == 'asin') || (buttonText == 'atan') || (buttonText == 'acos') || (buttonText == 'exp') || (buttonText == 'deg') ) {
             let temp = res.substr(res.length - 1, res.length);
             if (((!isNaN(temp)) || temp == ')') && (res != "")) {
                 res = res + "*" + buttonText + '(';
@@ -711,7 +717,8 @@ function pi() {
 //     }
 // }
 function sqrt() {
-    screen.value = Math.sqrt(screen.value, 2);
+    res = Math.sqrt(screen.value, 2);
+    screen.value = res;
 }
 function fact() {
     let i, fac, num;
@@ -723,3 +730,8 @@ function fact() {
     i = i - 1;
     screen.value = fac;
 }
+
+// function pow() {
+//     let last= res.slice(-1);
+
+// }
