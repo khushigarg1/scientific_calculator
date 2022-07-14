@@ -21,7 +21,6 @@ h1
 }
 #calc {
     float: left;
-    cursor: pointer;
     /* background-color: rgb(207, 249, 246); */
     /* background-image: linear-gradient(220deg, rgb(175, 244, 251,0.9), rgba(255, 154, 171, 0.9)); */
         background-image: linear-gradient(220deg, rgb(175, 244, 251,0.5), lightblue(0.8), rgba(255, 154, 171, 0.9));
@@ -97,7 +96,6 @@ input {
     margin: 0.5rem;
     outline: none;
     border: none;
-    cursor: pointer;
     /* border-radius: 15rem; */
     border-radius: 1rem;
     background-color: rgb(255, 209, 218);
@@ -109,8 +107,8 @@ input {
      15px 15px 10px rgba(0,0,0,0.1),
      25px 25px 10px rgba(0,0,0,0.1),
      inset 2px 2px 4px rgba(238, 154, 187, 0.4); */
-    /*
-    0px 8px 4px #888888,
+     /*
+     0px 8px 4px #888888,
     0px 8px 4px #888888,
     inset 0px 0px 3px #888888; */
 }
@@ -166,10 +164,10 @@ button:active {
     opacity: 1;
     background-color: #d1ced1;
     box-shadow: 0px 8px 9px #888888 inset;
-
 }
 
 button:hover {
+    cursor: pointer;
     transform: scale(1.2);
     opacity: 0.9;
 }
@@ -186,7 +184,7 @@ button:hover {
 @media (max-width: 700px) {
 
     html {
-        font-size: 70%;
+        font-size: 60%;
     }
 }
 
@@ -210,6 +208,7 @@ button:hover {
     #calc {
         height: 59rem;
         width: 42rem;
+        /* cursor: hand; */
     }
 
     #display {
@@ -229,24 +228,24 @@ button:hover {
     .rows button {
         font-size: 10px;
         /* margin-left: 0.5rem; */
-        position: relative;
+        /* position: relative; */
         width: 5rem;
         height: 5rem;
         /* width: 6rem;
         height: 5.5rem; */
         margin: 0.6rem;
+        /* cursor: hand; */
         border-radius: 1rem;
-        box-shadow: 0px 1px 3px #888888,
+            /* box-shadow: 0px 1px 3px #888888,
             0px 2px 3px #888888,
             1px 2px 3px #888888,
-            1px 2px 3px #888888;
-        
+            1px 2px 3px #888888; */
+            box-shadow:  1px 8px 9px #888888;
+    }
+    button:hover {
+        cursor: pointer;
+        /* transform: scale(1.2); */
+        opacity: 0.9;
     }
 
-
-    /* #bigbtns
-    {
-        font-size: small;
-
-    } */
 }
