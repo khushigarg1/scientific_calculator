@@ -3,6 +3,7 @@ let buttons = document.querySelectorAll('.btn,.bigbtn');
 let screen = document.getElementById('screen');
 
 // let scientificstring = sincostanlogRad;
+// ----------------------------------------INPUT SCREEN----------------------
 for (item of buttons) {
     item.addEventListener('click', (ele) => {
         buttonText = ele.target.innerText;
@@ -91,12 +92,14 @@ for (item of buttons) {
     })
 }
 
+// -----------------------------------ON EVALUATING IF SYNTAX ERROR OCCURS------------------------
 function syntaxError() {
     if (eval(display.value) == SyntaxError || eval(display.value) == ReferenceError || eval(display.value) == TypeError) {
         screen.value == "Syntax Error";
     }
 }
 
+// -------------------------------EVALUATION FO ALL TRIGO FUCNTIONS-------------------------
 function evaluation() {
     let text = res;
     if (text.includes("asin")) {
@@ -144,6 +147,7 @@ function evaluation() {
     }
 }
 
+// --------------------------------ASIN CAN TAKE ONLY 0-1 --------------------
 function asin() {
     let text = res;
     let pre = "";
@@ -515,6 +519,7 @@ function tan() {
     }
 }
 
+// -----------------------------LOG OF ANY NUMBER-------------------------
 function logarithm() {
     let text = res;
     let pre = "";
@@ -566,6 +571,7 @@ function logarithm() {
     }
 }
 
+// -------------------------------EXPONENTIAL FUNCTION-=-----------------------
 function exponential() {
     let text = res;
     let pre = "";
@@ -616,6 +622,8 @@ function exponential() {
         screen.value = res;
     }
 }
+
+// --------------------------------------CONVERTING DEGREE INTO RADIAN--------------------------
 function deg_into_radian() {
     let text = res;
     let pre = "";
@@ -676,6 +684,7 @@ function deg_into_radian() {
     }
 }
 
+// ----------------------------------CONERTING RADIAN INTO DEGREE-----------------------
 function rad_into_deg() {
     let text = res;
     let pre = "";
@@ -734,6 +743,7 @@ function rad_into_deg() {
 
 }
 
+// ---------------------------------SQUARE ROOT OF ANY Function(INPUT)--------------------
 function sqrrt() {
     let text = res;
     console.log("square root");
@@ -788,6 +798,7 @@ function sqrrt() {
     }
 }
 
+// --------------------------PI=3.1444------------------
 function pi() {
     let temp = res.substr(res.length - 1, res.length);
     if (!isNaN(temp)) {
@@ -803,6 +814,8 @@ function pi() {
 //     res = Math.sqrt(screen.value, 2);
 //     screen.value = res;
 // }
+
+// ----------------------------FACTORIAL OF ANY NUMBER-----------------------
 function fact() {
     let i, fac, num;
     fac = 1;

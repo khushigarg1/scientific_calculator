@@ -41,6 +41,8 @@ h1
     /* box-shadow: 10px -7px 15px darkgray, lightgreen 0px 0px 3px inset; */
 }
 
+
+/* ------------------------------------ OUTPUT SCREEEN------------------------- */
 #display {
     height: 4rem;
     width: 40rem;
@@ -50,6 +52,7 @@ h1
     /* padding: 1rem; */
 }
 
+/* -----------------------------------WHERE WE ARE SHOWING OUT INPUT---------------------- */
 input {
     position: absolute;
     border-radius: 0.8rem;
@@ -80,6 +83,8 @@ input {
     opacity: 0.9;
 }
 
+
+/* --------------------------------------ALL BUTTONS PROPERTY------------------------- */
 #buttons {
     /* width: 50rem; */
     display: flex;
@@ -149,6 +154,7 @@ input {
     background-color: rgb(255, 152, 172);
 }
 
+/* -------------------------------WHEN WE PRESS ON BUTTON WHATS HAPPENING---------------------- */
 button:active {
     opacity: 1;
     background-color: #d1ced1;
