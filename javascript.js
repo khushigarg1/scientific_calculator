@@ -1,18 +1,18 @@
 let res = "";
-let buttons = document.querySelectorAll('.btn,.bigbtn');
+let buttons = document.querySelectorAll('.btn, .bigbtn');
 let screen = document.getElementById('screen');
 
 // let scientificstring = sincostanlogRad;
-// ----------------------------------------INPUT SCREEN----------------------
+// ----------------------------------------INPUT SCREEN------------------------------
 for (item of buttons) {
     item.addEventListener('click', (ele) => {
-        buttonText = ele.target.innerText;
-        let lastletter = res.slice(-1);
+        buttonText = ele.target.innerText;              //it will show user's input
+        let lastletter = res.slice(-1);                             //it will slice last letter from string
         // if (res == "0" || res == "Syntax Error") {
         //     res = "";
         // }
-        if (buttonText == 'pow') {
-            if ((res != "") && (!isNaN(lastletter))) {
+        if (buttonText == 'pow') {                           //if user type pow button that is power button
+            if ((res != "") && (!isNaN(lastletter))) {          //if lastletetr present then set ** after last letter  
                 res += "**";
                 screen.value = res;
             }
@@ -21,7 +21,7 @@ for (item of buttons) {
                 screen.value = res;
             }
         }
-        else if (buttonText == 'AC') {
+        else if (buttonText == 'AC') {              //clear input screen
             res = "";
             screen.value = res;
         }
@@ -42,7 +42,7 @@ for (item of buttons) {
             }
             res = "";
         }
-        else if (buttonText == "CE") {
+        else if (buttonText == "CE") {                  //remove last character of a string
             res = res.substr(0, res.length - 1);
             screen.value = res;
         }
@@ -93,6 +93,7 @@ for (item of buttons) {
 }
 
 // -----------------------------------ON EVALUATING IF SYNTAX ERROR OCCURS------------------------
+//give syntax error if input string ahs some arithmetcial mathematical error
 function syntaxError() {
     if (eval(display.value) == SyntaxError || eval(display.value) == ReferenceError || eval(display.value) == TypeError) {
         screen.value == "Syntax Error";
@@ -100,6 +101,7 @@ function syntaxError() {
 }
 
 // -------------------------------EVALUATION FO ALL TRIGO FUCNTIONS-------------------------
+//evaluate all trigonometric and exponentia logarithm functions
 function evaluation() {
     let text = res;
     if (text.includes("asin")) {
